@@ -5,7 +5,7 @@
 #include "hashtable.h"
 
 #define NFILES 20
-#define READLEN 1024*1024
+#define READLEN 1024*1024*1024
 
 struct LRU_hash_key {
 	char *hash_key_filename;
