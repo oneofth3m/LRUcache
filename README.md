@@ -1,3 +1,5 @@
+<pre>
+
 LRUcache - Least Recently Used cache implementationg for reading file data
 ==========================================================================
 
@@ -24,6 +26,7 @@ $ ./LRUcache
 -------------------------------------------------------
 
 ----> File Size (vs) Wall clock time
+
 
       +--+----+-++---+----+-++--+----+-++---+---+--++--+----+-++---+---+--+*
       +          +           +          +           +    Cache Miss *******+
@@ -158,3 +161,5 @@ $ ./LRUcache
 - A hash table is used for fast access to to the nodes in double linked list
 - Hash table is indexed based on the filename
 - Hash table nodes contain Key(filename) and Value (pointer to the corresponding node in double linked list)
+
+</pre>
