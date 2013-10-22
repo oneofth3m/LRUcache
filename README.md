@@ -1,7 +1,7 @@
 <pre>
 
-LRUcache - Least Recently Used cache implementationg for reading file data
-==========================================================================
+LRUcache - Least Recently Used cache implementation for reading file data
+=========================================================================
 
 => COMPILE:
 -----------
@@ -133,28 +133,7 @@ $ ./LRUcache
 
 
 => Implementation:
-=========    2 ++-+----+-++---+----+-++--+----+-++---+---+--++--+----+-++---+---+--++
-      +          +           +          +           +    Cache Miss ****** +
-      |                                                   Cache Hit ###### |
-  1.5 ++                                                                  ++
-      |                                                                    |
-      |                                                                    |
-    1 ++                                                                  +*
-      |                                                                  **|
-      |                                                                **  |
-  0.5 ++                                                             **   ++
-      |                                                            **      |
-      |                                                          **        |
-    0 ***********************************************************###########
-      |                                                                    |
-      |                                                                    |
- -0.5 ++                                                                  ++
-      |                                                                    |
-      +          +           +          +           +          +           +
-   -1 ++-+----+-++---+----+-++--+----+-++---+---+--++--+----+-++---+---+--++
-     1000      10000       100000     1e+06       1e+07      1e+08       1e+09
-                              File Size (in Bytes)
-=========
+==================
 
 - A double linked list (dlqueue.h) is used to maintain cache. 
 - The data in the double linked list points to (filename, filedata)
